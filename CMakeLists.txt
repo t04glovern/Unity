@@ -41,6 +41,9 @@ project(unity
     DESCRIPTION "C Unit testing framework."
 )
 
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+
 # Options to Build With Extras -------------------------------------------------
 option(UNITY_EXTENSION_FIXTURE "Compiles Unity with the \"fixture\" extension." OFF)
 option(UNITY_EXTENSION_MEMORY "Compiles Unity with the \"memory\" extension." OFF)
