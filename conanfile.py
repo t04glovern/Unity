@@ -8,7 +8,7 @@ class UnityConan(ConanFile):
     description = "Simple Unit Testing for C"
     topics = ("testing")
     settings = "os", "compiler", "build_type", "arch"
-    no_copy_source = True
+    no_copy_source = False
     generators = "cmake"
 
     @property

@@ -1,7 +1,9 @@
 # Conan Testing
 
+You can retrieve your password from: https://JFROG_URL.jfrog.io/ui/quick-setup
+
 ```bash
-conan remote add conan-fm http://192.168.1.10:8081/artifactory/api/conan/conan
+conan remote add conan-fm https://JFROG_URL.jfrog.io/artifactory/api/conan/conan
 CONAN_REVISIONS_ENABLED=1 conan user -p <password> -r conan-fm admin
 ```
 
@@ -15,7 +17,7 @@ CONAN_REVISIONS_ENABLED=1 conan upload Unity -r conan-fm --all
 # Uploaded conan_export.tgz -> Unity/2.5.2 [0.26k]                                         
 # Uploaded conanfile.py -> Unity/2.5.2 [1.11k]                                             
 # Uploaded conanmanifest.txt -> Unity/2.5.2 [0.10k]                                        
-# Uploaded conan recipe 'Unity/2.5.2' to 'conan-fm': http://192.168.1.10:8081/artifactory/api/conan/conan
+# Uploaded conan recipe 'Unity/2.5.2' to 'conan-fm': https://JFROG_URL.jfrog.io/artifactory/api/conan/conan
 # Uploading package 1/1: d3058fa461095e3b567f10d3a72b4fac1de53cda to 'conan-fm'            
 # Compressing conan_package.tgz completed [157 files]                                      
 # Uploaded conan_package.tgz -> Unity/2.5.2:d305 [278.10k]                                 
